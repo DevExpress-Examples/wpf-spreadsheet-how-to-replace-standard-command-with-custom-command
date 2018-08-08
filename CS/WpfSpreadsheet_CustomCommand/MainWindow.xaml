@@ -1,0 +1,12 @@
+﻿<dx:ThemedWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxsps="http://schemas.devexpress.com/winfx/2008/xaml/spreadsheet" x:Class="WpfSpreadsheet_CustomCommand.MainWindow"
+        Title="Spreadsheet" Height="600" Width="800">
+    <Grid>
+        <dxsps:SpreadsheetControl x:Name="spreadsheetControl" CommandBarStyle="Ribbon" ShowFormulaBar="True" Loaded="spreadsheetControl_Loaded"
+                                  DocumentSource="pack://application:,,,/WpfSpreadsheet_CustomCommand;component/Document.xlsx"/>
+    </Grid>
+</dx:ThemedWindow>
