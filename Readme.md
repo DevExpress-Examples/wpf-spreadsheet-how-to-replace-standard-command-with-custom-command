@@ -9,3 +9,11 @@ Follow the steps below.
 1. Create a custom command class inherited from the command you wish to replace. In this example, it is **DevExpress.XtraSpreadsheet.Commands.FormatClearContentsCommand**. Override the **ExecuteCore** method to specify actions that the command should perform.
 2. Create a class inherited from [SpreadsheetCommandFactoryServiceWrapper](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraSpreadsheet.Services.SpreadsheetCommandFactoryServiceWrapper.class) to replace the default command service. In this class, override the [CreateCommand](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraSpreadsheet.Services.SpreadsheetCommandFactoryServiceWrapper.CreateCommand.method) method to substitute the default **FormatClearContents** and **FormatClearContentsContextMenuItem** commands with the newly created custom command. 
 3. Create a custom service instance and use the [SpreadsheetControl.ReplaceService](https://documentation.devexpress.com/WPF/DevExpress.Xpf.Spreadsheet.SpreadsheetControl.ReplaceService~T~.method) method to replace the default service with the custom one. Note that due to WPF Spreadsheet implementation specifics, it is necessary to replace the built-in service **after the control is completely loaded**.
+
+See the following files for implementation details:
+
+CS | VB
+------------ | -------------
+[MainWindow.xaml](./CS/WpfSpreadsheet_CustomCommand/MainWindow.xaml) | [MainWindow.xaml](./VB/WpfSpreadsheet_CustomCommand/MainWindow.xaml)
+[MainWindow.xaml.cs](./CS/WpfSpreadsheet_CustomCommand/MainWindow.xaml.cs) | [MainWindow.xaml.vb](./VB/WpfSpreadsheet_CustomCommand/MainWindow.xaml.vb)
+[**CustomCommandService.cs**](./CS/WpfSpreadsheet_CustomCommand/CustomCommandService.cs) | [**CustomCommandService.vb**](./VB/WpfSpreadsheet_CustomCommand/CustomCommandService.vb)

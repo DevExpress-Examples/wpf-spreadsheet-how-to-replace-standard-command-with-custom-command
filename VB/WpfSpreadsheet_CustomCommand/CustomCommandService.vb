@@ -16,7 +16,7 @@ Namespace WpfSpreadsheet_CustomCommand
         Public Property Control() As SpreadsheetControl
 
         Public Overrides Function CreateCommand(ByVal id As SpreadsheetCommandId) As SpreadsheetCommand
-            If id Is SpreadsheetCommandId.FormatClearContents OrElse id Is SpreadsheetCommandId.FormatClearContentsContextMenuItem Then
+            If id = SpreadsheetCommandId.FormatClearContents OrElse id = SpreadsheetCommandId.FormatClearContentsContextMenuItem Then
                 Return New CustomFormatClearContentsCommand(Control)
             End If
             Return MyBase.CreateCommand(id)
