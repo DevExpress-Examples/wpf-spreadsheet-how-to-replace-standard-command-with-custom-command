@@ -26,4 +26,4 @@ CS | VB
 
 ## Documentation
 
-* [Commands in Rich Text Editor for WPF](https://docs.devexpress.com/WPF/9108/controls-and-libraries/rich-text-editor/commands)
+* [How to: Replace Built-In Command with a Custom Command](https://docs.devexpress.com/WPF/120516/controls-and-libraries/spreadsheet/examples/commands/how-to-replace-built-in-command-with-a-custom-command)
