@@ -29,7 +29,7 @@ CS | VB
 
 * [How to: Replace Built-In Command with a Custom Command](https://docs.devexpress.com/WPF/120516/controls-and-libraries/spreadsheet/examples/commands/how-to-replace-built-in-command-with-a-custom-command)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-spreadsheet-how-to-replace-standard-command-with-custom-command&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-spreadsheet-how-to-replace-standard-command-with-custom-command&~~~was_helpful=no)
 
